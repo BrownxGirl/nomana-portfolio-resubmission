@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-family: calibri;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 1em 0;
+  }
+  
+  p {
+    margin: 0;
+    padding: 1em 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 25px;
+    border: 1px solid #666;
+    margin: 0.2em 0;
+    border-radius: 10px;
+
+  }
+  
+  .btn:hover {
+    background: #023000;
+    color: #eaeaea;
+  }
+  /* Nav bar */
+  li{
+    list-style: none;  
+    padding: 10px;
+    font-size:18px;
+    margin-top: 5px;
+    
+  }
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-right:20px;   
+  
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+}
+  /* Header Showcase */
+  
+  #showcase {
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+   
+  }
+  
+  #showcase .african-image {
+    position: absolute;
+    background: #333
+      url("img/african.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  
+  
+  #showcase h1 {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  #showcase .content-wrap{
+      margin-top: 90px;
+  }
+
+
+  #showcase .content-wrap,
+  #section-a .content-wrap {
+    padding: 0 1.5em;
+  }
+  
+  
+  
+  /* Section B */
+  
+  #section-b {
+    padding: 1em 2em 2em;
+    background-image: url(img/green.jpg);
+  
+    
+
+}
+  
+  #section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #section-b li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+  }
+  
+  .card-content {
+    padding: 1.5em;
+  }
+   li{
+      border-radius: 30px;
+  }
+  /* Section C */
+  
+  #section-c {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+  }
+  
+  .images{
+      padding: 10px;
+      display: inline-flex;
+  }
+
+  .html{
+      width: 300px;
+  }
+  .design{
+      width: 300px;
+  }
+  /* Section D / Boxes */
+  
+  #section-d .box {
+    padding: 2em;
+    color: #fff;
+    background-image: url(img/tree.jpg);
+    background-repeat: no-repeat;
+    
+  }
+  
+  #section-d .box:first-child {
+    background: #163f03;
+  }
+  
+  .icon{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .iconx{
+      padding: 20px;
+      color:white;
+  }
+  /* Footer */
+  
+  #main-footer {
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #main-footer a {
+    color: #2690d4;
+    text-decoration: none;
+  }
+  
+  /* Media Queries */
+  
+  @media (min-width: 700px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+  
+    #section-a .content-text {
+      columns: 2;
+      column-gap: 2em;
+    }
+  
+    #section-a .content-text p {
+      padding-top: 0;
+    }
+  
+    .content-wrap,
+    #section-b ul {
+      grid-column: 2/4;
+    }
+  
+    .box,
+    #main-footer div {
+      grid-column: span 2;
+    }
+  
+    #section-b ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    #section-b li {
+      width: 31%;
+    }
+  
+  }
+  @media (max-width: 800px){
+
+    .images{
+        display: flex;
+        flex-direction: column;
+    }
+   #work{
+       display: flex;
+       flex-direction: column;
+   }
+   
+  }
